@@ -13,7 +13,7 @@ user_input = []
 
 # Asking the user to provide N
 for i in range(N):
-    number = int(input(f"Enter number {i+1}: "))
+    number = int(input(f"Enter {N} numbers - #{i+1}: "))
     user_input.append(number)
 
 # Asking the user for the integer X
@@ -21,6 +21,6 @@ X = int(input("Enter the input X (integer): "))
 
 # Checking if X is in the user inputs
 if X in user_input:
-    print(f"Index {X}: {user_input.index(X) + 1}")
+    print(f"Index of {X} is found at the position: #{user_input.index(X) + 1}")
 else:
     print("-1")
